@@ -28,6 +28,7 @@ $RECYCLE.BIN/
 #NPM
 node_modules
 build
+build-types
 
 #Composer
 vendor
