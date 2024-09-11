@@ -18,7 +18,7 @@
 	"scripts": {
 		"compile": "babel src --out-dir build",
 		"build": "node build.js && npm run compile",
-		"prepublishOnly": "npm run clean && npm run build && git push --tags",
+		"prepublishOnly": "npm run clean && npm run build",
 		"clean": "rimraf ./src/library ./build"
 	},
 	"babel": {
@@ -27,12 +27,12 @@
 		]
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.10.5",
-		"@babel/core": "^7.11.1",
-		"@wordpress/babel-preset-default": "^4.17.0",
-		"@wordpress/eslint-plugin": "^7.1.0",
+		"@babel/cli": "^7.25.6",
+		"@babel/core": "^7.25.2",
+		"@wordpress/babel-preset-default": "^8.7.0",
+		"@wordpress/eslint-plugin": "^21.0.0",
 		"esm": "^3.2.25",
-		"prettier": "^2.0.5",
-		"rimraf": "^3.0.2"
+		"prettier": "^3.3.3",
+		"rimraf": "^6.0.1"
 	}
 }

@@ -1,7 +1,6 @@
 const fs = require('fs').promises;
 const prettier = require('prettier');
 
-const manifestDirectory = 'src/manifest/';
 const svgDirectory = 'src/svg/';
 const path = __dirname + '/src/';
 const warningHeader = `// --
@@ -20,7 +19,7 @@ const init = async () => {
 	svgs.forEach(createJSX);
 
 	createIndex(svgs);
-	//createIconsMD(svgs);
+	createIconsMD(svgs);
 };
 
 /**
@@ -32,7 +31,7 @@ const createJSX = async (file) => {
 	console.log(`Creating JSX file for : ${file}`);
 
 	const fileName = file.replace('.svg', '');
-	const iconName = toPascalCase(fileName);
+	const iconName = toCamelCase(fileName);
 
 	renderSVG(fileName).then(async ({ svg, primitivesUsed }) => {
 		let newFileContent = `${warningHeader}
@@ -43,11 +42,11 @@ const createJSX = async (file) => {
 
 		export default ${iconName}`;
 
-		newFileContent = prettier.format(newFileContent, {
+		newFileContent = await prettier.format(newFileContent, {
 			singleQuote: true,
-			useTabs: true,
+			useTabs: false,
 			tabWidth: 4,
-			parser: 'babel',
+			parser: 'babel'
 		});
 
 		await writeFile(`${path}library/`, `${fileName}.js`, newFileContent);
@@ -90,8 +89,8 @@ createIndex = async (files) => {
 		content = content + `export { default as ${toCamelCase(filename)} } from './library/${filename}';\r\n`;
 	});
 
-	await fs.mkdir(path, { recursive: true });
-	await fs.writeFile(`${path}index.js`, content);
+	//await fs.mkdir(path, { recursive: true });
+	await writeFile(`${path}`, 'index.js', content);
 };
 
 /**
@@ -102,26 +101,19 @@ createIndex = async (files) => {
 createIconsMD = async (files) => {
 	console.log(`Creating icons markdown file`);
 
-	let content = `# CoBlocks Icons
+	let content = `# Icons
 
-| Name (slug)   | Icon   | Style   | Component name   | Keywords   |
-| ------------- | ------ | ------- | ---------------- | ---------- |\r\n`;
+| Icon   | Component name   |
+| ------ | ---------------- |\r\n`;
 
 	for (const file of files) {
-		let data = await fs.readFile(manifestDirectory + file, 'utf-8');
-		data = JSON.parse(data);
-		const filename = file.replace('.json', '');
+		const fileName = file.replace('.svg', '');
+		const iconName = toCamelCase(fileName);
 
-		data.styles.forEach((style) => {
-			content = style === 'default'
-				? content +
-				`| ${data.label} (${filename}) | <img src="./src/svg/${filename}.svg" width="24" height="24"> | ${style} | ${toPascalCase(filename)}Icon | ${data.keywords.map((keyword) => ` ${keyword}`)} |\r\n`
-				: content +
-				`| | <img src="./src/svg/${filename}-${style}.svg" width="24" height="24"> | ${style} | ${toPascalCase(filename)}Styles.${style} | |\r\n`
-		});
+		content = content + `| <img src="./src/svg/${fileName}.svg" width="24" height="24"> | ${iconName} |\r\n`;
 	};
 
-	await fs.writeFile(`${__dirname}/icons.md`, content);
+	await writeFile(`${__dirname}/`, 'icons.md', content);
 };
 
 /**
@@ -166,8 +158,7 @@ const replacePrimitives = (str) => {
 findPrimitives = (content) => {
 	const primitives = ['SVG', 'Path', 'G', 'Rect', 'Circle', 'Polygon', 'Defs'];
 
-	return primitives
-		.filter((primitive) => content.indexOf(`<${primitive}`) != -1);
+	return primitives.filter((primitive) => content.indexOf(`<${primitive}`) != -1);
 }
 
 /**
@@ -191,7 +182,7 @@ const writeFile = async (path, filename, content) => {
 const toCamelCase = (text) => {
 	text = toPascalCase(text);
 	text = text.charAt(0).toLowerCase() + text.slice(1)
-	
+
 	return text;
 }
 
@@ -212,4 +203,3 @@ const toPascalCase = (text) => text.replace(/(^\w|-\w)/g, clearAndUpper);
 const clearAndUpper = (text) => text.replace(/-/, '').toUpperCase();
 
 init();
-
