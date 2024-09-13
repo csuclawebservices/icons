@@ -1,6 +1,6 @@
 {
 	"name": "@csuclawebservices/icons",
-	"version": "1.5.0",
+	"version": "1.6.0",
 	"description": "Icons to use in the WordPress Block Editor.",
 	"keywords": [
 		"wordpress",
@@ -17,10 +17,10 @@
 		"access": "public"
 	},
 	"scripts": {
+		"clean": "rimraf ./src/library ./build",
 		"compile": "babel src --out-dir build",
 		"build": "node build.js && tsc && npm run compile",
-		"prepublishOnly": "npm run clean && npm run build",
-		"clean": "rimraf ./src/library ./build"
+		"prepublishOnly": "npm run clean && npm run build"
 	},
 	"babel": {
 		"presets": [
