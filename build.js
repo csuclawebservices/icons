@@ -3,10 +3,7 @@ const prettier = require('prettier');
 
 const svgDirectory = 'src/svg/';
 const path = __dirname + '/src/';
-const warningHeader = `// --
-// -- WARNING!
-// -- This is an auto-generated file. Do not edit.
-// --`;
+const warningHeader = `// -- This is an auto-generated file. Do not edit.`;
 
 /**
  * Scan for all the files inside /svg

@@ -1,7 +1,4 @@
-// --
-// -- WARNING!
 // -- This is an auto-generated file. Do not edit.
-// --
 
 export { default as decoration } from './library/decoration';
 export { default as layout1 } from './library/layout-1';

@@ -1,7 +1,4 @@
-// --
-// -- WARNING!
 // -- This is an auto-generated file. Do not edit.
-// --
 
 import { SVG, Path } from '@wordpress/primitives';
 
