@@ -20,7 +20,7 @@ return (
 
 ### As Block Icon
 ```js
-import {registerBlockType } from '@wordpress/blocks';
+import { registerBlockType } from '@wordpress/blocks';
 import { layout1 } from '@csuclawebservices/icons';
 
 import metadata from './block.json';
