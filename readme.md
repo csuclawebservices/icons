@@ -7,6 +7,8 @@ npm install @csuclawebservices/icons
 ```
 
 ## Usage
+
+### As Icon Component
 ```js
 import { Icon } from '@wordpress/icons';
 import { layout1 } from '@csuclawebservices/icons';
@@ -14,6 +16,22 @@ import { layout1 } from '@csuclawebservices/icons';
 return (
 	<Icon icon={layout1}/>
 );
+```
+
+### As Block Icon
+```js
+import {registerBlockType } from '@wordpress/blocks';
+import { layout1 } from '@csuclawebservices/icons';
+
+import metadata from './block.json';
+import edit from './edit';
+import save from './save';
+
+registerBlockType( metadata.name, {
+	icon: layout1,
+	edit,
+	save
+});
 ```
 
 ## License
