@@ -16,6 +16,10 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/csuclawebservices/icons.git"
+	},
 	"scripts": {
 		"clean": "rimraf ./src/library ./build",
 		"compile": "babel src --out-dir build",
