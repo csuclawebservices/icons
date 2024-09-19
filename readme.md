@@ -1,5 +1,5 @@
 # Icons
-An npm package to use as WordPress Block Editor icon components.
+An npm package to use as WordPress Block Editor icon components. See the full [icon component list](icons.md).
 
 ## Install
 ```bash
