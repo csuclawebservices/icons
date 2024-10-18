@@ -11,3 +11,4 @@ export { default as layout6 } from './library/layout-6';
 export { default as layout7 } from './library/layout-7';
 export { default as layout8 } from './library/layout-8';
 export { default as layout9 } from './library/layout-9';
+export { default as overflow } from './library/overflow';
