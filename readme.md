@@ -40,4 +40,4 @@ This project is licensed under the GPL 2.0 License - see the [LICENSE](LICENSE) 
 ## Copyright
 
 © 2022 GoDaddy. Original build.js.
-© 2024 John Russell, Colorado State University. All rights reserved.
+© 2024 Colorado State University. All rights reserved.

@@ -1,6 +1,7 @@
 // -- This is an auto-generated file. Do not edit.
 
 export { default as collage } from './library/collage';
+export { default as contentList } from './library/content-list';
 export { default as decoration } from './library/decoration';
 export { default as layout1 } from './library/layout-1';
 export { default as layout2 } from './library/layout-2';
