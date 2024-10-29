@@ -8,6 +8,7 @@
 | <img src="./src/svg/content-list-overview.svg" width="24" height="24"> | contentListOverview |
 | <img src="./src/svg/content-list.svg" width="24" height="24"> | contentList |
 | <img src="./src/svg/decoration.svg" width="24" height="24"> | decoration |
+| <img src="./src/svg/decorative-resize-corner-n-e.svg" width="24" height="24"> | decorativeResizeCornerNE |
 | <img src="./src/svg/layout-1.svg" width="24" height="24"> | layout1 |
 | <img src="./src/svg/layout-2.svg" width="24" height="24"> | layout2 |
 | <img src="./src/svg/layout-3.svg" width="24" height="24"> | layout3 |
