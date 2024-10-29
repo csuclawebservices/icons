@@ -3,6 +3,9 @@
 | Icon   | Component name   |
 | ------ | ---------------- |
 | <img src="./src/svg/collage.svg" width="24" height="24"> | collage |
+| <img src="./src/svg/content-list-item.svg" width="24" height="24"> | contentListItem |
+| <img src="./src/svg/content-list-items.svg" width="24" height="24"> | contentListItems |
+| <img src="./src/svg/content-list-overview.svg" width="24" height="24"> | contentListOverview |
 | <img src="./src/svg/content-list.svg" width="24" height="24"> | contentList |
 | <img src="./src/svg/decoration.svg" width="24" height="24"> | decoration |
 | <img src="./src/svg/layout-1.svg" width="24" height="24"> | layout1 |
