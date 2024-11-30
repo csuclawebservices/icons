@@ -1,6 +1,6 @@
 {
 	"name": "@csuclawebservices/icons",
-	"version": "1.16.0",
+	"version": "1.17.0",
 	"description": "Icons to use in the WordPress Block Editor.",
 	"keywords": [
 		"wordpress",
@@ -23,8 +23,10 @@
 	"scripts": {
 		"clean": "rimraf ./src/library ./build",
 		"compile": "babel src --out-dir build",
+		"copy-assets": "copyfiles src/svg/* assets/icons/",
 		"build": "node build.js && tsc && npm run compile",
-		"prepublishOnly": "npm run clean && npm run build"
+		"prepublishOnly": "npm run clean && npm run build",
+		"postinstall": "npm run copy-assets"
 	},
 	"babel": {
 		"presets": [
@@ -36,6 +38,7 @@
 		"@babel/core": "^7.25.2",
 		"@wordpress/babel-preset-default": "^8.7.0",
 		"@wordpress/eslint-plugin": "^21.0.0",
+		"copyfiles": "^2.4.1",
 		"esm": "^3.2.25",
 		"prettier": "^3.3.3",
 		"rimraf": "^6.0.1",
