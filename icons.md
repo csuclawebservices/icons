@@ -2,6 +2,10 @@
 
 | Icon   | Component name   |
 | ------ | ---------------- |
+| <img src="./src/svg/arrow-down.svg" width="24" height="24"> | arrowDown |
+| <img src="./src/svg/arrow-left.svg" width="24" height="24"> | arrowLeft |
+| <img src="./src/svg/arrow-right.svg" width="24" height="24"> | arrowRight |
+| <img src="./src/svg/arrow-up.svg" width="24" height="24"> | arrowUp |
 | <img src="./src/svg/collage.svg" width="24" height="24"> | collage |
 | <img src="./src/svg/content-list-item.svg" width="24" height="24"> | contentListItem |
 | <img src="./src/svg/content-list-items.svg" width="24" height="24"> | contentListItems |
@@ -19,5 +23,7 @@
 | <img src="./src/svg/layout-8.svg" width="24" height="24"> | layout8 |
 | <img src="./src/svg/layout-9.svg" width="24" height="24"> | layout9 |
 | <img src="./src/svg/overflow.svg" width="24" height="24"> | overflow |
+| <img src="./src/svg/pause.svg" width="24" height="24"> | pause |
+| <img src="./src/svg/play.svg" width="24" height="24"> | play |
 | <img src="./src/svg/testimonial.svg" width="24" height="24"> | testimonial |
 | <img src="./src/svg/testimonials.svg" width="24" height="24"> | testimonials |

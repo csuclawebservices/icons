@@ -1,5 +1,9 @@
 // -- This is an auto-generated file. Do not edit.
 
+export { default as arrowDown } from './library/arrow-down';
+export { default as arrowLeft } from './library/arrow-left';
+export { default as arrowRight } from './library/arrow-right';
+export { default as arrowUp } from './library/arrow-up';
 export { default as collage } from './library/collage';
 export { default as contentListItem } from './library/content-list-item';
 export { default as contentListItems } from './library/content-list-items';
@@ -17,5 +21,7 @@ export { default as layout7 } from './library/layout-7';
 export { default as layout8 } from './library/layout-8';
 export { default as layout9 } from './library/layout-9';
 export { default as overflow } from './library/overflow';
+export { default as pause } from './library/pause';
+export { default as play } from './library/play';
 export { default as testimonial } from './library/testimonial';
 export { default as testimonials } from './library/testimonials';
