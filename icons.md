@@ -25,5 +25,7 @@
 | <img src="./src/svg/overflow.svg" width="24" height="24"> | overflow |
 | <img src="./src/svg/pause.svg" width="24" height="24"> | pause |
 | <img src="./src/svg/play.svg" width="24" height="24"> | play |
+| <img src="./src/svg/slide.svg" width="24" height="24"> | slide |
+| <img src="./src/svg/slider.svg" width="24" height="24"> | slider |
 | <img src="./src/svg/testimonial.svg" width="24" height="24"> | testimonial |
 | <img src="./src/svg/testimonials.svg" width="24" height="24"> | testimonials |

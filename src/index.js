@@ -23,5 +23,7 @@ export { default as layout9 } from './library/layout-9';
 export { default as overflow } from './library/overflow';
 export { default as pause } from './library/pause';
 export { default as play } from './library/play';
+export { default as slide } from './library/slide';
+export { default as slider } from './library/slider';
 export { default as testimonial } from './library/testimonial';
 export { default as testimonials } from './library/testimonials';
