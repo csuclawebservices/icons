@@ -27,5 +27,8 @@
 | <img src="./src/svg/play.svg" width="24" height="24"> | play |
 | <img src="./src/svg/slide.svg" width="24" height="24"> | slide |
 | <img src="./src/svg/slider.svg" width="24" height="24"> | slider |
+| <img src="./src/svg/split-layout-left.svg" width="24" height="24"> | splitLayoutLeft |
+| <img src="./src/svg/split-layout-right.svg" width="24" height="24"> | splitLayoutRight |
+| <img src="./src/svg/split-layout.svg" width="24" height="24"> | splitLayout |
 | <img src="./src/svg/testimonial.svg" width="24" height="24"> | testimonial |
 | <img src="./src/svg/testimonials.svg" width="24" height="24"> | testimonials |

@@ -25,5 +25,8 @@ export { default as pause } from './library/pause';
 export { default as play } from './library/play';
 export { default as slide } from './library/slide';
 export { default as slider } from './library/slider';
+export { default as splitLayoutLeft } from './library/split-layout-left';
+export { default as splitLayoutRight } from './library/split-layout-right';
+export { default as splitLayout } from './library/split-layout';
 export { default as testimonial } from './library/testimonial';
 export { default as testimonials } from './library/testimonials';
