@@ -2,6 +2,8 @@
 
 | Icon   | Component name   |
 | ------ | ---------------- |
+| <img src="./src/svg/accordion-item.svg" width="24" height="24"> | accordionItem |
+| <img src="./src/svg/accordion.svg" width="24" height="24"> | accordion |
 | <img src="./src/svg/arrow-down.svg" width="24" height="24"> | arrowDown |
 | <img src="./src/svg/arrow-left.svg" width="24" height="24"> | arrowLeft |
 | <img src="./src/svg/arrow-right.svg" width="24" height="24"> | arrowRight |
@@ -13,6 +15,8 @@
 | <img src="./src/svg/content-list.svg" width="24" height="24"> | contentList |
 | <img src="./src/svg/decoration.svg" width="24" height="24"> | decoration |
 | <img src="./src/svg/decorative-resize-corner-n-e.svg" width="24" height="24"> | decorativeResizeCornerNE |
+| <img src="./src/svg/image-group-item.svg" width="24" height="24"> | imageGroupItem |
+| <img src="./src/svg/image-group.svg" width="24" height="24"> | imageGroup |
 | <img src="./src/svg/layout-1.svg" width="24" height="24"> | layout1 |
 | <img src="./src/svg/layout-2.svg" width="24" height="24"> | layout2 |
 | <img src="./src/svg/layout-3.svg" width="24" height="24"> | layout3 |
@@ -25,6 +29,8 @@
 | <img src="./src/svg/overflow.svg" width="24" height="24"> | overflow |
 | <img src="./src/svg/pause.svg" width="24" height="24"> | pause |
 | <img src="./src/svg/play.svg" width="24" height="24"> | play |
+| <img src="./src/svg/sequence-item.svg" width="24" height="24"> | sequenceItem |
+| <img src="./src/svg/sequence.svg" width="24" height="24"> | sequence |
 | <img src="./src/svg/slide.svg" width="24" height="24"> | slide |
 | <img src="./src/svg/slider.svg" width="24" height="24"> | slider |
 | <img src="./src/svg/split-layout-left.svg" width="24" height="24"> | splitLayoutLeft |
